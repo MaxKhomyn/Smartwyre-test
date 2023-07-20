@@ -2,15 +2,15 @@
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public sealed class RebateDataStore
+public sealed class RebateDataStore : IRebateDataStore
 {
-    public Rebate GetRebate(string rebateIdentifier)
+    public Rebate GetRebate(string identifier)
     {
         // Access database to retrieve account, code removed for brevity 
-        return new Rebate();
+        return new Rebate() { Identifier = identifier };
     }
 
-    public void StoreCalculationResult(Rebate account, decimal rebateAmount)
+    public void StoreCalculationResult(Rebate account, decimal amount)
     {
         // Update account in database, code removed for brevity
     }
