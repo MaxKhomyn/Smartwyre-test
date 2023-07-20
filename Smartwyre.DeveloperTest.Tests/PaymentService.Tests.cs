@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Smartwyre.DeveloperTest.Tests;
 
-public class PaymentServiceTests
+public sealed class PaymentServiceTests
 {
     [Fact]
     public void Test1()

@@ -2,7 +2,7 @@
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class RebateDataStore
+public sealed class RebateDataStore
 {
     public Rebate GetRebate(string rebateIdentifier)
     {

@@ -3,7 +3,7 @@ using Smartwyre.DeveloperTest.Types;
 
 namespace Smartwyre.DeveloperTest.Services;
 
-public class RebateService : IRebateService
+public sealed class RebateService : IRebateService
 {
     public CalculateRebateResult Calculate(CalculateRebateRequest request)
     {

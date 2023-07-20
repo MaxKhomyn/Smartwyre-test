@@ -1,6 +1,6 @@
 ﻿namespace Smartwyre.DeveloperTest.Types;
 
-public class CalculateRebateResult
+public sealed class CalculateRebateResult
 {
     public bool Success { get; set; }
 }

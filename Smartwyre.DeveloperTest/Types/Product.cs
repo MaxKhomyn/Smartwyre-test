@@ -1,6 +1,6 @@
 ﻿namespace Smartwyre.DeveloperTest.Types;
 
-public class Product
+public sealed class Product
 {
     public int Id { get; set; }
     public string Identifier { get; set; }

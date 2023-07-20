@@ -2,7 +2,7 @@
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class ProductDataStore
+public sealed class ProductDataStore
 {
     public Product GetProduct(string productIdentifier)
     {

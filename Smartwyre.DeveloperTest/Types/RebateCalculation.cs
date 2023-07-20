@@ -1,6 +1,6 @@
 ﻿namespace Smartwyre.DeveloperTest.Types;
 
-public class RebateCalculation
+public sealed class RebateCalculation
 {
     public int Id { get; set; }
     public string Identifier { get; set; }
