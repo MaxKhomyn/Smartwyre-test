@@ -62,7 +62,7 @@ namespace Smartwyre.DeveloperTest.Tests
             {
                 new TestScenario
                 {
-                    Name = "FixedCashAmount - has no SupportedIncentiveType.FixedCashAmount",
+                    Name = "FixedCashAmount - has no SupportedIncentiveType",
                     Rebate = new Rebate() { Identifier = "RebateIdentifier", Incentive = IncentiveType.FixedCashAmount },
                     Product = new Product() { Identifier = "ProductIdentifier", Price = 100, SupportedIncentives = SupportedIncentiveType.FixedRateRebate },
                     Request = new ()
@@ -79,8 +79,8 @@ namespace Smartwyre.DeveloperTest.Tests
             {
                 new TestScenario
                 {
-                    Name = "FixedCashAmount - has no SupportedIncentiveType.AmountPerUom",
-                    Rebate = new Rebate() { Identifier = "RebateIdentifier", Incentive = IncentiveType.AmountPerUom },
+                    Name = "FixedRateRebate - has no SupportedIncentiveType",
+                    Rebate = new Rebate() { Identifier = "RebateIdentifier", Incentive = IncentiveType.FixedRateRebate },
                     Product = new Product() { Identifier = "ProductIdentifier", Price = 100, SupportedIncentives = SupportedIncentiveType.FixedCashAmount },
                     Request = new ()
                     {
@@ -88,7 +88,7 @@ namespace Smartwyre.DeveloperTest.Tests
                         RebateIdentifier = "RebateIdentifier",
                         Volume = 1,
                     },
-                    Expected = new ("SupportedIncentives of product should contain AmountPerUom"),
+                    Expected = new ("SupportedIncentives of product should contain FixedRateRebate"),
                 },
             };
 
@@ -96,7 +96,7 @@ namespace Smartwyre.DeveloperTest.Tests
             {
                 new TestScenario
                 {
-                    Name = "FixedCashAmount - has no SupportedIncentiveType.AmountPerUom",
+                    Name = "AmountPerUom - has no SupportedIncentiveType",
                     Rebate = new Rebate() { Identifier = "RebateIdentifier", Incentive = IncentiveType.AmountPerUom },
                     Product = new Product() { Identifier = "ProductIdentifier", Price = 100, SupportedIncentives = SupportedIncentiveType.FixedCashAmount },
                     Request = new ()
